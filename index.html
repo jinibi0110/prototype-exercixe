@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <title>Prototype Exercise</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1, p {
+            color: #4a4a4a;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .main {
+          background-image: url("https://i.imgur.com/sKV54PO.jpeg");
+          background-color: #cccccc;
+          width: 50%;
+        }
+
+        .side {
+          background: none;
+          margin: auto;
+        }
+
+        .main,
+        .side {
+          padding: 2%;
+          border-radius: 10px 0 0 10px;
+        }
+
+        @media ( min-width : 600px ){
+        	.flexbox {
+                display: -webkit-flex;
+                display: flex;
+                border-radius: 10px 10px 10px 10px;
+                border: 2px solid black;
+                height: 97vh;
+        	}
+
+            .main {
+              margin: 0 10px 0 0;
+            }
+        }
+
+        .btn {
+            background-color: green;
+            color: #fff;
+            border: none;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <body>
+        <div class="flexbox">
+            <article class="main">
+              <h2>PHOTO FROM: IMGUR</h2>
+            </article>
+
+            <section class="side">
+              <h1>Interstellar - A Documentary</h1>
+              <p>
+                Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+              <button type="button" class="btn btn-success" md>
+                  LEARN MORE
+              </button>
+            </section>
+        </div>
+    </body>
+</html>
